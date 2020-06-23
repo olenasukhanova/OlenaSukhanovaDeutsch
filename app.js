@@ -52,3 +52,7 @@ $('.slider_feedback_section').slick({
     ]
  });
 
+
+//  let link = document.querySelector('link[rel=import]');
+//  let content = link.import.querySelector('#intro-dm');
+//  document.body.appendChild(content.cloneNode(true));
