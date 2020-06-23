@@ -1014,6 +1014,7 @@ a.instagram:hover, a.facebook:hover {
     .butt-tel:hover, .butt-email:hover, .butt-instagram:hover, .butt-facebook:hover,
     .butt-telegram:hover,    .butt-skype:hover {
         background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
     }
     
     .overlay_contact:hover  div.butt-row_contact {
