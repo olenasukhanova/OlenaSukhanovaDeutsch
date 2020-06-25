@@ -4,7 +4,10 @@
     max-width: 8.33%;
     flex: 0 0 100%;
 }
-
+.col-xs-1-5 {
+    max-width: 12.5%;
+    flex: 0 0 100%;
+}
 .col-xs-2 {
     max-width: 16.67%;
     flex: 0 0 100%;
@@ -67,6 +70,11 @@
         max-width: 8.33%;
         flex: 0 0 100%;
     }
+    .col-sm-1-5 {
+        max-width: 12.5%;
+        flex: 0 0 100%;
+    }
+
     .col-sm-2 {
         max-width: 16.67%;
         flex: 0 0 100%;
@@ -118,6 +126,10 @@
 @media (min-width: 992px) {
     .col-md-1 {
         max-width: 8.33%;
+        flex: 0 0 100%;
+    }
+    .col-md-1-5 {
+        max-width: 12.5%;
         flex: 0 0 100%;
     }
     .col-md-2 {
@@ -173,7 +185,10 @@
         max-width: 8.33%;
         flex: 0 0 100%;
     }
-    
+    .col-lg-1-5 {
+        max-width: 12.5%;
+        flex: 0 0 100%;
+    }
     .col-lg-2 {
         max-width: 16.67%;
         flex: 0 0 100%;
