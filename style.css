@@ -1278,7 +1278,7 @@ div.like {
     background-color:rgba(241, 8, 19, 0.2);
   }
 
-  .active, .accordion:hover {
+  .active1, .accordion:hover {
     background-color: white;
   }
 
@@ -1290,7 +1290,7 @@ div.like {
     margin-left: 5px;
   }
   
-  .active:after {
+  .active1:after {
     content: "\2796"; /* Unicode character for "minus" sign (-) */
   }
 
