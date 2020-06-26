@@ -1101,7 +1101,13 @@ a.instagram:hover, a.facebook:hover {
         color: white;
         opacity: 1;
     }
-
+ 
+    div.butt-row2 {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        position: relative;
+    }
   
 /*********** CONTACT PAGE  ENDS**************/
  
@@ -1241,6 +1247,7 @@ div.like {
 }
 .buttons-row a {
     text-decoration: none;
+    color:black;
 }
 
 .button-par {
