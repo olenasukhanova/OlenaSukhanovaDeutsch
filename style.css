@@ -92,27 +92,45 @@ body {
     line-height: 26px;
 }
 
-.nav-menu li:first-child {
+/* .nav-menu li:first-child {
     border: 2px solid #14d8b9;
     border-radius: 5px;
 }
 
 li>.active {
     color: #9be6da
+} */
+
+.js-menu-link:hover, .active {
+    /* color: #9be6da;  */
+    border: 2px solid #14d8b9;
+    border-radius: 5px;
 }
 
+.js-menu-link {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    /* background-color: #f1f1f1; */
+    cursor: pointer;
+    /* border: 2px solid #5b6168; */
+    border-radius: 5px;
+}
+
+/* 
 li>.active:hover {
     border-color: #2f8ebb;
 }
 
 li:hover a.active {
     color: #9ba5a4;
-}
+} */
 
-.nav-menu li:hover {
+/* .nav-menu li:hover {
     border: 2px solid #5b6168;
     border-radius: 5px;
-}
+} */
+
 
 .das_sprachclub{
     background: url("images/2.jpg") no-repeat;
@@ -359,7 +377,7 @@ label {
     color: #fff;
     /* background-color: #2c2c2c; */
     background-color: rgba(241, 8, 19, 1);
-    /* border-radius: 10px; */
+    border-radius: 5px;
     border: 1px solid white;
 }
 
@@ -564,6 +582,7 @@ label {
 .caption {
     color: rgba(241, 8, 19, 0.9);
     padding-top: 44px;
+    padding-bottom: 20px;
     font-size: 20px;
     font-weight: 700;
     text-align: center;
@@ -729,6 +748,36 @@ img.slider_photo {
     cursor: pointer;
     background: rgba(241, 8, 19, 0.4);
 }
+.more-button , .more-button3 {
+    transition: all 0.5s;
+}
+
+.more-button span, .more-button3 span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  .more-button span:after,.more-button3 span:after {
+    /* content: '\00bb'; */
+    content:'>>';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    /* transition: 0.5s; */
+  }
+  
+  .more-button:hover span, .more-button3:hover span {
+    padding-right: 25px; 
+  }
+  
+  .more-button:hover span:after,  .more-button3:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 .more-button1 a, .more-button2 a{
  text-decoration: none;
  color: white;
@@ -738,7 +787,7 @@ img.slider_photo {
     /* background: rgba(241, 8, 19, 0.4); */
     color:rgba(241, 8, 19, 0.4);
     background: rgba(255, 255, 255, 1);
-    border: 2px solid rgba(241, 8, 19, 0.4);;
+    border: 2px solid rgba(241, 8, 19, 0.4);
 }
 
 .more-button2, .more-button1 {
@@ -896,7 +945,7 @@ a.instagram:hover, a.facebook:hover {
     flex-flow: column nowrap;
     justify-content: space-between;
     position: relative;
-    z-index: 10;
+    z-index: 10; 
 }
 .contact-social-icons {
     display: flex;
@@ -1232,6 +1281,7 @@ div.like {
     border-radius: 5px;
     border: 1px solid black;
     outline: none;
+    cursor: pointer;
 }
 .butt-contact:hover{
     border: 1px solid grey;
@@ -1325,40 +1375,6 @@ div.like {
     text-decoration: none;
 }
 
-/* PAYMENT BUTTON */
-.btn-group-lg>.btn, .btn-lg {
-    padding: 0px 0px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 2px;
-}
-.btn-success {
-    color:none;
-    background-color:none;
-    border-color: none;
-}
-
-
-.btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: 400;
-    text-align: center;
-    vertical-align: middle;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 0px 0px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    border-radius: 2px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
 /* tablet */
 
 @media (min-width: 768px) {

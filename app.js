@@ -72,3 +72,41 @@ for (i = 0; i < acc.length; i++) {
 }
 
 
+// active menu button 
+
+// let menuItems = document.getElementsByClassName('js-menu-link');
+// let onClick = function (event) {
+//   event.preventDefault();
+  
+//   for (let i = 0; i < menuItems.length; i++) {
+//     menuItems[i].classList.remove('active');
+//   }
+  
+//    event.currentTarget.classList.add('active');
+// };
+
+// for (let i = 0; i < menuItems.length; i++) {
+//     menuItems[i].addEventListener('click', onClick, false);
+// }
+
+
+// Get the container element
+// let btnContainer = document.getElementsByClassName("menu");
+// console.log(btnContainer)
+
+
+// let btns = document.getElementsByClassName("js-menu-link");
+// console.log(btns)
+
+
+// for (let i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//     let current = document.getElementsByClassName("active");
+//     current[0].className = current[0].className.replace(" active", "");
+//     this.className += " active";
+//   });
+// }
+
+
+
+
