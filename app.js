@@ -1,16 +1,5 @@
 
 // Slider
-
-$(".slider_container").slick(  {
-   dots:true,
-   autoplay:true,
-   autoplaySpeed:2000,
-   arrows:false,
-   // adaptiveHeight: true,
-   pauseOnDotsHover:true,
-   zindex:10,
-});
-
 $('.slider_feedback_section').slick({
    infinite: true,
    slidesToShow: 3,
@@ -71,41 +60,24 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
+// modal window
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
 
-// active menu button 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
 
-// let menuItems = document.getElementsByClassName('js-menu-link');
-// let onClick = function (event) {
-//   event.preventDefault();
-  
-//   for (let i = 0; i < menuItems.length; i++) {
-//     menuItems[i].classList.remove('active');
-//   }
-  
-//    event.currentTarget.classList.add('active');
-// };
+span.onclick = function() {
+  modal.style.display = "none";
+}
 
-// for (let i = 0; i < menuItems.length; i++) {
-//     menuItems[i].addEventListener('click', onClick, false);
-// }
-
-
-// Get the container element
-// let btnContainer = document.getElementsByClassName("menu");
-// console.log(btnContainer)
-
-
-// let btns = document.getElementsByClassName("js-menu-link");
-// console.log(btns)
-
-
-// for (let i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//     let current = document.getElementsByClassName("active");
-//     current[0].className = current[0].className.replace(" active", "");
-//     this.className += " active";
-//   });
-// }
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
 
 
