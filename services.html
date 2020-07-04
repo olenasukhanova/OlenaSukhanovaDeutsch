@@ -8,10 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="wanker.css">
+    <script src="jquery.wanker.min.js"></script>
+
+    <script type="text/javascript" src="jquery.goup.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="grid.css">
+   
  
    
 </head>
@@ -254,6 +263,17 @@
         </div>        
     </div>        
 </section>
+
+ <!-- ****** Squishing window *********-->
+  <div class="wanker" data-wanker>
+        <div class="wanker-content">
+            <h1>Не интерессно???  Ну.....почитайте!!</h1>
+          <p> Not interesting??? Please, read to the end.</p><br>
+          <p> Nicht interessant???  Bitte, lesen Sie bis zum Ende.</p> 
+        </div>
+      </div>
+<!-- ****** Squishing window *********-->
+
     <!-- ****** FOOTER ******* -->
     <section class="footer">
         <div class="container">
@@ -273,10 +293,28 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="jquery.selectric.min.js"></script>
+   
+    <script>
+$(document).ready(function () {
+  $.goup({
+      trigger: 100,
+      bottomOffset: 150,
+      locationOffset: 100,
+      title: 'ВВЕРХ',
+      titleAsText: true,
+      zIndex:100,
+      containerRadius:50,
+      containerColor:"#c71806",
+      entryAnimation:"slide",
+  });
+});
+    </script>
+
+     <script>
+         $(function() {
+  $('[data-wanker]').wanker({delay: 200, duration: 2000});
+});
+     </script>
     <script src="app.js"></script>
 </body>
 

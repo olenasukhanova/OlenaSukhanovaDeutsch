@@ -8,10 +8,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
+
+    <link rel="stylesheet" type="text/css" href="wanker.css">
+    <script src="jquery.wanker.min.js"></script>
+
+    <script type="text/javascript" src="jquery.goup.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+  
+    <style>
+
+
+    </style>
 </head>
 
 <body>
@@ -41,24 +50,17 @@
     <section>
        
     </section>
-    <!-- <section class="contact" id="contacts">
+ 
+    <section class="contact-social-icons" id="contacts" src="#">
+        <div class="ir">
+     <img class="js-chickendinner" alt="" src="#">
         <div class="container">
             <div class="row contact_block">
                 <div class="col contact_part_one col-xs-12 col-md-12 col-sm-12 col-lg-12">
                     <p class="title_contact "> Свяжитесь со мной </p>
                     <p class="title_contact "> Анна Альшева </p>
                 </div>
-            </div>
-        </div>
-    </section> -->
-    <section class="contact-social-icons" id="contacts">
-        <div class="container">
-            <div class="row contact_block">
-                <div class="col contact_part_one col-xs-12 col-md-12 col-sm-12 col-lg-12">
-                    <p class="title_contact "> Свяжитесь со мной </p>
-                    <p class="title_contact "> Анна Альшева </p>
-                </div>
-                <div class="col contact_section col-xs-12 col-md-4 col-sm-12 col-lg-14">
+                <div class="col contact_section contact_pad col-xs-12 col-md-4 col-sm-12 col-lg-14">
                     <div class="contact_container">
                         <div class="overlay_contact">
                             <img src="images/img23.png" alt="photo of notebook" class="img">
@@ -117,9 +119,20 @@
             </div>
             </div>
         </div>
-        <div class="overlay"></div>
+        <div class="overlay_cont"></div>
+    </div>
     </section>
- 
+
+    <!-- ****** Squishing window *********-->
+    <div class="wanker" data-wanker>
+        <div class="wanker-content">
+            <h1>Не интерессно???  Ну.....почитайте!!</h1>
+            <p> Not interesting??? Please, read to the end.</p><br>
+            <p> Nicht interessant???  Bitte, lesen Sie bis zum Ende.</p> 
+        </div>
+      </div>
+ <!-- ****** Squishing window *********-->
+
     <!-- ****** FOOTER ******* -->
     <section class="footer">
         <div class="container">
@@ -139,10 +152,37 @@
             </div>
         </div>
     </section>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript" src="jquery.selectric.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+     <script type='text/javascript' src='chickendinner.js'></script>
+    
+
+
+     <script>
+        $(document).ready(function () {
+          $.goup({
+              trigger: 100,
+              bottomOffset: 150,
+              locationOffset: 100,
+              title: 'ВВЕРХ',
+              titleAsText: true,
+              zIndex:100,
+              containerRadius:50,
+              containerColor:"#c71806",
+              entryAnimation:"slide",
+          });
+        });
+            </script>
+
+<script>
+$('.js-chickendinner').chickenDinner({
+  path: 'images/',
+  fadeInTime:3000,
+  cssBG:true,
+  TheImages: [ '7.jpg','3.jpg', '10.jpg', '8.jpg',]
+}); 
+        </script>
+
+      
     <script src="app.js"></script>
 </body>
 
