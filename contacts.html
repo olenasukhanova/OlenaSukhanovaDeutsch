@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="grid.css">
 
+
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>   
     <link rel="stylesheet" type="text/css" href="wanker.css">
     <script src="jquery.wanker.min.js"></script>
 
-    <script type="text/javascript" src="jquery.goup.min.js"></script>
+    <script type="text/javascript" src="jquery.goup.min.js"></script> -->
 
     <link rel="stylesheet" href="style.css">
   
@@ -152,26 +155,10 @@
             </div>
         </div>
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
-     <script type='text/javascript' src='chickendinner.js'></script>
-    
 
-
-     <script>
-        $(document).ready(function () {
-          $.goup({
-              trigger: 100,
-              bottomOffset: 150,
-              locationOffset: 100,
-              title: 'ВВЕРХ',
-              titleAsText: true,
-              zIndex:100,
-              containerRadius:50,
-              containerColor:"#c71806",
-              entryAnimation:"slide",
-          });
-        });
-            </script>
+ 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ></script>
+<script type='text/javascript' src='chickendinner.js'></script>
 
 <script>
 $('.js-chickendinner').chickenDinner({
@@ -180,10 +167,43 @@ $('.js-chickendinner').chickenDinner({
   cssBG:true,
   TheImages: [ '7.jpg','3.jpg', '10.jpg', '8.jpg',]
 }); 
-        </script>
+</script>
 
-      
-    <script src="app.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>   
+    <link rel="stylesheet" type="text/css" href="wanker.css">
+    <script src="jquery.wanker.min.js"></script>
+
+    <script type="text/javascript" src="jquery.goup.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+      $.goup({
+          trigger: 100,
+          bottomOffset: 150,
+          locationOffset: 100,
+          title: 'ВВЕРХ',
+          titleAsText: true,
+          zIndex:100,
+          containerRadius:50,
+          containerColor:"#c71806",
+          entryAnimation:"slide",
+          hideUnderWidth:100,
+      });
+    });
+
+    $(function() {
+$('[data-wanker]').wanker({delay: 200, duration: 2000});
+});
+</script>
+
+<!-- <script>
+    $(function() {
+$('[data-wanker]').wanker({delay: 200, duration: 2000});
+});
+</script> -->
+
+    <!-- <script src="app.js"></script> -->
 </body>
 
 </html>

@@ -25,6 +25,7 @@
   line-height: .9em;
   margin-bottom: 2em;
   color: #e9522f;
+  word-wrap: break-word;
 }
 
 .wanker-content p {

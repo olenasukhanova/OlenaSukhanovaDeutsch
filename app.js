@@ -110,6 +110,7 @@ $(function() {
 });
 
 
+
 // UP-button
 $(document).ready(function () {
   $.goup({
@@ -122,5 +123,6 @@ $(document).ready(function () {
       containerRadius:50,
       containerColor:"#c71806",
       entryAnimation:"slide",
+      hideUnderWidth:100,
   });
 });
