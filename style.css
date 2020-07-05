@@ -90,8 +90,9 @@ body {
 }
 
 .nav-menu a:hover {
-    border: 2px solid #14d8b9;
-    border-radius: 5px;
+    /* border: 2px solid #14d8b9;
+    border-radius: 5px; */
+    color:#14d8b9;
 }
 
 .nav-menu li.active a {
@@ -191,9 +192,8 @@ li:hover a.active {
     padding-left: 18px;
     padding-right: 18px;
     padding-bottom: 20px;
-    /* text-align: center; */
-    /* text-transform: uppercase; */
     line-height: 1.5;
+    text-align: justify;
 }
 
 .aboutMe_desc p {
@@ -218,11 +218,6 @@ li:hover a.active {
     padding-bottom: 50px;
 }
 
-.photo_part_two {
-    /* width:100%; */
-    padding-top: 51px;
-}
-
 .teacher_photo {
     width: 100%;
     height: 100%;
@@ -234,7 +229,8 @@ li:hover a.active {
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
+    padding-top: 50px;
     animation: title_part ease-in 10s infinite reverse;
     transform: translate(10px, 0px);
 }
@@ -299,11 +295,12 @@ div.bg {
     padding: 4px;
     text-transform: uppercase;
     font-size: 10px;
-    /* width: 100%; */
+    width: 100%;
     height: 40px;
     text-align: center;
     color: #fff;
-    background-color: rgba(241, 8, 19, 1);
+    background-color: rgba(241, 8, 19, 0.5);
+    /* background-color: rgba(241, 8, 19, 1); */
     border-radius: 5px;
     border: 1px solid white;
     cursor: pointer;
@@ -317,11 +314,25 @@ div.bg {
 
 #myBtn:hover {
     opacity: 0.7;
-    background-color: rgba(241, 8, 19, 0.5);
+    /* background-color: rgba(241, 8, 19, 0.5); */
+    background-color: rgba(255, 255, 255, 0.2);
+    color:black;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 .bg:hover #myBtn {
     opacity: 1;
+}
+
+.line-top, .line-bottom {
+    width: 100%;
+    height: 5px;
+    background-color:  rgba(241, 8, 19, 0.5);
+}
+
+.line-bottom {
+    margin-top: 6px;
 }
 
 a.butt2-facebook {
@@ -358,7 +369,7 @@ div.butt-row {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 17px;
 }
 
 a.butt1-instagram:hover, a.butt2-facebook:hover {
@@ -414,12 +425,11 @@ a.butt2-facebook:hover {
     cursor: pointer;
 }
 
-.close:hover {
+/* .close:hover {
     transform: rotate(360deg);
-    /* transition:3s; */
     -webkit-transition: 1.1s ease-out;
     transition: 1.1s ease-out;
-}
+} */
 
 /* SLIDER */
 .slider-block {
@@ -536,22 +546,20 @@ a.butt2-facebook:hover {
 .table_part {
     padding-left: 20px;
     padding-right: 20px;
-    animation: table_part_one, table_part_two, table_part_three, table_part_four, table_part_five, table_part_six, table_part_seven, table_part_eight 3s ease-in 1s infinite reverse;
+    
 }
 
 .table_part_two, .table_part_one, .table_part_three, .table_part_four, .table_part_five, .table_part_six, .table_part_seven, .table_part_eight {
     width: 80px;
-    height: 100px;
-    background-color: rgba(241, 8, 19, 0.2);
-    font-size: 12px;
-    font-weight: 400;
+    height: 100px;  
     text-align: center;
-    /* display: flex;
-       justify-content: center; */
-    border-radius: 50px;
-    vertical-align: middle;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
+    /* font-size: 12px;
+    font-weight: 400;   */
+    background-color:rgba(241, 8, 19, 0.2);
+    border-radius:50px;
+    vertical-align: middle;
 }
 
 .table_part_three, .table_part_four {
@@ -570,15 +578,6 @@ a.butt2-facebook:hover {
     /* width:100px; */
     padding-left: 10px;
     padding-right: 10px;
-}
-
-.table_part_one:hover, .table_part_two:hover, .table_part_three:hover, .table_part_four:hover, .table_part_five:hover, .table_part_six:hover, .table_part_seven:hover, .table_part_eight:hover {
-    /* background-color: rgba(35, 183, 164, 0.6); */
-    /* transform:scale(1.1,1.1); */
-    /* transform: skew(10deg); */
-    /* transform: skewY(10deg);
-    transform: translate(10px,0); */
-    /* transform: rotate(10deg); */
 }
 
 .caption {
@@ -688,6 +687,7 @@ img.slider_photo {
 
 .study-section img {
     height: 250px;
+    object-fit: cover;
 }
 
 .study-description {
@@ -711,6 +711,7 @@ img.slider_photo {
 
 .study_photo {
     width: 100%;
+    object-fit: cover;
 }
 
 .study-button, .study-button1 {
@@ -962,9 +963,6 @@ a.instagram:hover, a.facebook:hover {
    
 }
 
-/* .contact_part_one {
-    position: relative;
-} */
 
 .ir img {
     max-width:100%;
@@ -1007,9 +1005,6 @@ a.instagram:hover, a.facebook:hover {
   
 }
 
-.contact_container {
-    padding-top: 10px;
-}
 
 .contact_text {
     text-align: center;
@@ -1523,11 +1518,16 @@ div.like {
         flex-flow: row nowrap;
         justify-content: center;
     }
-  
+
+    .menu {
+        margin-left: 35px;
+    }
+    .social_menu {
+        margin-left: 30px;
+    }
 }
-.goup-text {
-    font-size: 12px;
-}
+
+
 
 /* laptop */
 
@@ -1599,7 +1599,8 @@ div.like {
         opacity: 1;
         right: 0;
     }
-
+   
+   
   
 }
 
@@ -1610,8 +1611,9 @@ div.like {
         max-width: 1140px;
     }
     .teacher_photo {
-        width: 525px;
+        width: 100%;
         height: 525px;
+        object-fit: cover;
     }
     .study-section img {
         height: 250px;
@@ -1627,7 +1629,6 @@ div.like {
         padding-top: 10px;
     }
 
- 
 
 }
 

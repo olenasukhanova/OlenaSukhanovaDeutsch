@@ -116,7 +116,7 @@ $(document).ready(function () {
   $.goup({
       trigger: 100,
       bottomOffset: 150,
-      locationOffset: 100,
+      locationOffset: 40,
       title: 'ВВЕРХ',
       titleAsText: true,
       zIndex:100,
@@ -126,3 +126,5 @@ $(document).ready(function () {
       hideUnderWidth:100,
   });
 });
+
+
