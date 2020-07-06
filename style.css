@@ -28,9 +28,10 @@ body {
 .header {
     position: sticky;
     /* background-color: rgba(10, 126, 160, 1); */
-    background: white url("images/flag.jpg") bottom left no-repeat;
+    /* background: white url("images/flag.jpg") bottom left no-repeat; */
+        background:rgba(244, 244, 244);
     width: 100%;
-    background-position: center;
+    /* background-position: bottom; */
     top: 0;
     z-index: 100;
 }
@@ -92,11 +93,15 @@ body {
 .nav-menu a:hover {
     /* border: 2px solid #14d8b9;
     border-radius: 5px; */
-    color:#14d8b9;
+    /* color:#14d8b9; */
+    color:rgba(199, 2, 11, 1);
+    border-bottom: 1px solid rgba(199, 2, 11, 1);
+
 }
 
 .nav-menu li.active a {
-    color: green;
+    /* color: green; */
+    color:rgba(199, 2, 11, 1);
 }
 
 /* .nav-menu li:first-child {
@@ -140,7 +145,7 @@ li:hover a.active {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
     /* height: 100%; */
     z-index: -100;
@@ -166,7 +171,8 @@ li:hover a.active {
 .rectangular {
     /* width:500px;
     height:300px; */
-    background-color: rgba(241, 8, 19, 0.7);
+    /* background-color: rgba(241, 8, 19, 0.7); */
+    background-color: rgba(199, 2, 11, 0.7);
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -299,8 +305,9 @@ div.bg {
     height: 40px;
     text-align: center;
     color: #fff;
-    background-color: rgba(241, 8, 19, 0.5);
+    /* background-color: rgba(241, 8, 19, 0.5); */
     /* background-color: rgba(241, 8, 19, 1); */
+    background:  rgba(199, 2, 11, 0.7);;
     border-radius: 5px;
     border: 1px solid white;
     cursor: pointer;
@@ -487,7 +494,8 @@ a.butt2-facebook:hover {
     right: 0;
     left: 0;
     bottom: 0;
-    background-color: rgba(241, 8, 19, 0.5);
+    /* background-color: rgba(241, 8, 19, 0.5); */
+    background-color:  rgba(199, 2, 11, 0.5);
     /* background-color: rgba(192,48,28,0.6);; */
     height: 100%;
     z-index: -100;
@@ -533,7 +541,8 @@ a.butt2-facebook:hover {
 .service_part {
     display: flex;
     flex-flow: row wrap;
-    background-color: rgb(244, 244, 244);
+    /* background-color: rgb(244, 244, 244); */
+    background-color: rgba(236,236,236, 0.3);
     height: 100%;
     border-radius: 50px;
 }
@@ -678,15 +687,15 @@ img.slider_photo {
 .slider_feedback {
     padding-top: 50px;
     padding-bottom: 50px;
-    /* background-color: rgba(241, 8, 19, 0.2); */
-    background-color: rgba(221, 218, 218, 0.2);
+    /* background-color: rgb(244, 244, 244); */
+    background-color: rgba(236,236,236, 0.3);
 }
 
 /*  STUDY PART */
 
 .study, .german {
-    /* background-color: rgba(241, 8, 19, 0.2); */
-    background-color: rgba(221, 218, 218, 0.2);
+    background-color: rgba(236,236,236, 0.3);
+    /* background-color: rgba(221, 218, 218, 0.2); */
     padding-bottom: 50px;
     padding-top: 50px;
 }
@@ -880,7 +889,8 @@ img.slider_photo {
 /* FOOTER */
 
 .footer {
-    background-color: rgba(199, 24, 6, 1);
+    /* background-color: rgba(199, 24, 6, 1); */
+    background-color:  rgba(199, 2, 11, 1);
 }
 
 .copyright {
@@ -1152,11 +1162,13 @@ div.butt-row2 {
 
 /***** Servise page  *****/
 
-.service_section, .products_section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    background-color: rgb(244, 244, 244);
+.service_section, .products_section  {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    /* background-color: rgb(244, 244, 244); */
 }
+
+
 
 .service_club {
     display: flex;
@@ -1204,8 +1216,10 @@ div.butt-row2 {
 }
 
 .buttons_section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    /* background-color: rgb(244, 244, 244); */
+    background-color: rgba(236,236,236, 0.3);
 }
 
 .service_club_two, .products-row {
