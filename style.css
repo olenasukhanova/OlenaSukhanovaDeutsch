@@ -534,6 +534,37 @@ a.butt2-facebook:hover {
     padding-top: 10px;
 }
 
+
+
+/* ***************** */
+.overlay_in_photo_service {
+    position: relative;
+    z-index: 11;
+}
+
+
+div.bg_service {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(236,236,236, 0.4);
+}
+
+.overlay_in_photo_service:hover .bg_service {
+    /* background-color: rgba(241, 8, 19, 0.3); */
+    background-color: rgba(236,236,236, 0);
+}
+
+
+
+
+
 /* lightBox */
 .lb-cancel {
     display: block;
