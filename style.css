@@ -1419,26 +1419,25 @@ div.like {
     height: 100px;
     font-weight: 400;
     font-size: 16px;
-    border: 3px solid white;
+    /* border: 3px solid rgba(236,236,236, 1); */
     background-color: rgba(241, 8, 19, 0.2);
 }
 
 .active-butt, .accordion:hover {
-    background-color: white;
+    background: rgba(236,236,236, 0.3);
 }
 
 .accordion:after {
     content: '\02795';
-    /* Unicode character for "plus" sign (+) */
     font-size: 13px;
     color: #777;
     float: right;
     margin-left: 5px;
+   
 }
 
 .active-butt:after {
     content: "\2796";
-    /* Unicode character for "minus" sign (-) */
 }
 
 .products_hide {
@@ -1446,7 +1445,7 @@ div.like {
     font-weight: 400;
     font-size: 14px;
     cursor: pointer;
-    background-color: white;
+    background: rgba(236,236,236, 0.3);
     display: none;
     overflow: hidden;
 }
