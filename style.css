@@ -306,16 +306,17 @@ div.bg {
 #myBtn {
     padding: 4px;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 10px; 
     width: 100%;
     height: 40px;
     text-align: center;
     color: #fff;
-    /* background-color: rgba(241, 8, 19, 0.5); */
+    background-color: rgba(241, 8, 19, 0.5);
     /* background-color: rgba(241, 8, 19, 1); */
-    background:  rgba(199, 2, 11, 0.7);;
+    /* background-color:  rgba(199, 2, 11, 0.5);; */
     border-radius: 5px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+    border: none;
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -325,6 +326,8 @@ div.bg {
     outline: none;
 }
 
+
+
 #myBtn:hover {
     opacity: 0.7;
     /* background-color: rgba(241, 8, 19, 0.5); */
@@ -332,7 +335,10 @@ div.bg {
     color:black;
     font-size: 14px;
     font-weight: 700;
+    border-radius: 2px;
 }
+
+
 
 .bg:hover #myBtn {
     opacity: 1;
