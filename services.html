@@ -9,9 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="grid.css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="wanker.css">
@@ -28,22 +25,27 @@
     <header class="header">
         <div class="container">
             <div class="row header-row">
-                <div class="col logo col-xs-12 col-md-6 col-sm-6 col-lg-6">
+                <div class="col logo col-xs-9 col-md-6 col-sm-6 col-lg-6">
                     <a href="https://www.instagram.com/das_sprachclub/">
                         <p class="logo-text"> Deutsch Sprache Club
                             <img src="images/flag3.jpg" alt="flag" class="flag"></p>
 
                     </a>
                 </div>
-                <div class="col menu col-xs-12 col-md-6 col-sm-6 col-lg-6">
-                    <nav>
-                        <ul class="nav-menu">
-                            <li><a href="index.html" class="active">Das_sprachclub</a></li>
+                <div class="col menu col-xs-3 col-md-6 col-sm-6 col-lg-6">
+                    <nav class="navigation hidden-menu">
+                        <ul class="nav-menu" id="nav">
+                            <li class="current"><a href="index.html" class="active">Das_sprachclub</a></li>
                             <li><a href="index.html#about">Обо мне</a></li>
                             <li><a href="services.html#services"> Услуги</a></li>
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>
                     </nav>
+                    <div class="nav-mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,7 +279,7 @@
     <!-- ****** FOOTER ******* -->
     <section class="footer">
         <div class="container">
-            <div class="row header-row">
+            <div class="row footer-row">
                 <div class="col footerform col-xs-12 col-md-6 col-sm-6">
                     <div class="copyright">
                         <p class="copyright"> &copy; 2020 Copyright. All Rights Reserved. </p>
@@ -294,29 +296,32 @@
         </div>
     </section>
    
-    <script>
-$(document).ready(function () {
-  $.goup({
-      trigger: 100,
-      bottomOffset: 150,
-      locationOffset: 50,
-      title: 'ВВЕРХ',
-      titleAsText: true,
-      zIndex:100,
-      containerRadius:50,
-      containerColor:"#c71806",
-      entryAnimation:"slide",
-      hideUnderWidth:100,
-  });
-});
-    </script>
 
-     <script>
-         $(function() {
-  $('[data-wanker]').wanker({delay: 200, duration: 2000});
-});
-     </script>
-     
+    <script>
+        $(document).ready(function () {
+          $.goup({
+              trigger: 100,
+              bottomOffset: 150,
+              locationOffset: 50,
+              title: 'ВВЕРХ',
+              titleAsText: true,
+              zIndex:100,
+              containerRadius:50,
+              containerColor:"#c71806",
+              entryAnimation:"slide",
+              hideUnderWidth:100,
+          });
+        });
+            </script>
+        
+             <script>
+                 $(function() {
+          $('[data-wanker]').wanker({delay: 200, duration: 2000});
+        });
+             </script>
+             
+ 
+   
     <script src="app.js"></script>
 </body>
 

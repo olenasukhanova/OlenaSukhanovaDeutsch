@@ -29,14 +29,24 @@ body {
     position: sticky;
     /* background-color: rgba(10, 126, 160, 1); */
     /* background: white url("images/flag.jpg") bottom left no-repeat; */
-        background:rgba(244, 244, 244);
+    background:rgba(244, 244, 244);
     width: 100%;
-    /* background-position: bottom; */
     top: 0;
     z-index: 100;
 }
 
 .header-row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
 }
@@ -67,13 +77,11 @@ body {
 }
 
 .nav-menu {
-    /* width: 100%; */
-    /* overflow-x: auto;
-    overflow-y: hidden; */
     padding-top: 10px;
     padding-bottom: 10px;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
 }
 
 
@@ -87,44 +95,30 @@ body {
     font-size: 16px;
     height: 26px;
     line-height: 26px;
+   
 }
 
 .nav-menu a:hover {
-    /* border: 2px solid #14d8b9;
-    border-radius: 5px; */
-    /* color:#14d8b9; */
     color:rgba(199, 2, 11, 1);
     border-bottom: 1px solid rgba(199, 2, 11, 1);
 
 }
 
 .nav-menu li.active a {
-    /* color: green; */
     color:rgba(199, 2, 11, 1);
 }
 
-/* .nav-menu li:first-child {
-    border: 2px solid #14d8b9;
-    border-radius: 5px;
+
+/* body .current a {
+    color:black;
 }
 
-li>.active {
-    color: #9be6da
+body .current a:hover {
+    color:rgba(199, 2, 11, 1);
+    border-bottom: 1px solid rgba(199, 2, 11, 1);
 } */
 
-/* 
-li>.active:hover {
-    border-color: #2f8ebb;
-}
 
-li:hover a.active {
-    color: #9ba5a4;
-} */
-
-/* .nav-menu li:hover {
-    border: 2px solid #5b6168;
-    border-radius: 5px;
-} */
 
 .das_sprachclub {
     background: url("images/2.jpg") no-repeat;
@@ -1485,6 +1479,7 @@ div.like {
     .container {
         max-width: 720px;
     }
+  
     .header-row {
         flex-flow: row nowrap;
         justify-content: space-between;
@@ -1711,6 +1706,123 @@ div.like {
     }
 }
 
+
+.nav-mobile-menu {
+    display: none;
+}
+
 /* mobile */
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+
+    .menu {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .nav-menu {
+        display: flex;
+        justify-content: center;
+    }
+  
+
+    .logo-text{
+        font-size: 14px;
+        text-align: center;
+
+    }
+  
+
+   .logo {
+       padding-top: 0;
+       display: flex;
+       justify-content: flex-start;
+   }
+
+   .flag {
+    width: 40px;
+    height: 20px;
+}
+
+    .header-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 10px 0;
+    }
+
+
+    .header-row>col {
+        margin: 0;
+    }
+
+    .nav-mobile-menu {
+        display: block;
+        position: relative;
+        width: 15px;
+        height: 15px;
+    }
+
+    .nav-mobile-menu span {
+        height: 1px;
+        background-color:black;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transition: .25s ease-in-out;
+    }
+    .nav-mobile-menu span:nth-child(1) {
+        top: 3px;
+    }
+    .nav-mobile-menu span:nth-child(2) {
+        top: 7px;
+    }
+    .nav-mobile-menu span:nth-child(3) {
+        bottom: 3px;
+    }
+    /* active menu */
+    .nav-mobile-menu.active-menu span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+    .nav-mobile-menu.active-menu span:nth-child(2) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+    .nav-mobile-menu.active-menu span:nth-child(3) {
+        transform: scale(0);
+    }
+
+    .navigation.active-menu {
+        opacity: 1;
+        visibility: visible;
+        top: 46px;
+        transform: translateX(0);
+    }
+
+    .navigation.active-menu .nav-menu {
+        flex-direction: column;
+        /* flex-wrap: nowrap; */
+        padding-top: 10px;
+    }
+
+    .navigation {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 260px;
+        max-width: 260px;
+        transition: all 500ms ease-in-out;
+        transform: translateX(150%);
+        background-color: rgba(244, 244, 244);
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .hidden-menu {
+        opacity: 0;
+        visibility: hidden;
+    }
+  
+  
+}

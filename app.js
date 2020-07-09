@@ -1,44 +1,21 @@
-// Slider
-// $('.slider_feedback_section').slick({
-//    infinite: true,
-//    slidesToShow: 3,
-//    slidesToScroll: 3,
-//    arrows:true,
-//    autoplay:true,
-//    autoplaySpeed:2000,
-//    adaptiveHeight: true,
-//    pauseOnDotsHover:true,
-//    responsive: [
-//       {
-//         breakpoint:1024,
-//         settings:{
-//           slidesToShow: 3,
-//           slidesToScroll: 3,
-//         }
-//       },
-//       {
-//         breakpoint:800,
-//         settings:{
-//           slidesToShow:2,
-//           slidesToScroll:2,
-//           dots:true,
-//           arrows:false,
-//         }
-//       },
-//       {
-//         breakpoint:500,
-//         settings:{
-//           slidesToShow:1,
-//           slidesToScroll:1,
-//           dots:true,
-//           arrows:false,
-//           autoplaySpeed:5000,
-//           centerMode:true,
-//           centerPadding:'20px',
-//         }
-//       }
-//     ]
-//  });
+// mobile menu
+
+let mobileMenu = document.querySelector(".nav-mobile-menu");
+let mainMenu = document.querySelector(".navigation");
+
+mobileMenu.addEventListener("click", function(){
+  mobileMenu.classList.toggle("active-menu");
+  if(mobileMenu.classList.contains('active-menu')){
+      mainMenu.classList.add('active-menu')
+  } else{
+    mainMenu.classList.remove('active-menu')
+  }
+}) 
+
+// // active menu 
+// $('#nav').onePageNav ({
+//   currentClass:"current"
+// })
 
 
 // //  products-buttons
@@ -91,19 +68,6 @@ $(function(){
 
 
 
-// btn
-
-// var controller = new ScrollMagic.Controller();
-
-// new ScrollMagic.Scene({
-//    triggerElement: "#multiDirect",
-//     duration: 200, 
-//     offset: 10, 
-// })
-// .setPin("#animate")
-// .addTo(controller);
-
-
 // squise-curtains
 $(function() {
   $('[data-wanker]').wanker({delay: 200, duration: 2000});
@@ -126,7 +90,6 @@ $(document).ready(function () {
       hideUnderWidth:100,
   });
 });
-
 
 
 
