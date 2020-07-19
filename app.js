@@ -12,10 +12,6 @@ mobileMenu.addEventListener("click", function(){
   }
 }) 
 
-// // active menu 
-// $('#nav').onePageNav ({
-//   currentClass:"current"
-// })
 
 
 // //  products-buttons
@@ -35,6 +31,7 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
 
 // modal window
 let modal = document.getElementById("myModal");
@@ -91,5 +88,42 @@ $(document).ready(function () {
   });
 });
 
+
+
+// adjusting nav menu height
+ 
+// let header = document.querySelector(".header").scrollHeight;
+// console.log(header);
+//  let sections = document.querySelectorAll("section")
+//  console.log(sections);
+//   let topMenu = scroll.offsetParent - header.scrollHeight;
+//   console.log(topMenu);
+
+// $('html, body').animate({
+//   scrollTop: $("#section2").offset().top - $("#nav").height() // minus the nav height
+// }, 1000);
+
+
+
+// tabs
+
+function openTranslate(translateName, elmnt, color) {
+  let i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";  
+  }
+
+  document.getElementById(translateName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
 
 
