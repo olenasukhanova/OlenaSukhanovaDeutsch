@@ -185,6 +185,43 @@ body {
     text-align: none;
 }
 
+#more {
+    padding-top: 130px;
+    margin-top: -80px;
+    -webkit-background-clip: content-box;
+    background-clip: content-box;
+    }
+
+    .more-exp {
+        padding-top: 80px;
+        margin-top: -80px;
+        -webkit-background-clip: content-box;
+        background-clip: content-box;
+        }
+        
+        .title-column  {
+            padding-top: 30px;
+        }
+
+        #more {
+            padding-top: 100px;
+            margin-top: -49px;
+            -webkit-background-clip: content-box;
+            background-clip: content-box;
+            }
+    
+            .more-exp {
+                padding-top: 49px;
+                margin-top: -49px;
+                -webkit-background-clip: content-box;
+                background-clip: content-box;
+                }
+                
+                .title-column  {
+                    padding-top: 30px;
+                }
+        /****** About me************/
+
 .sprachclub {
     color: white;
     font-size: 16px;
@@ -443,6 +480,7 @@ a.butt2-facebook:hover {
     -webkit-transition: 1.1s ease-out;
     transition: 1.1s ease-out;
 } */
+
 
 /* SLIDER */
 
@@ -1711,6 +1749,23 @@ div.like {
         font-weight: 400;
         word-wrap: none;
     }
+    #more {
+        padding-top: 130px;
+        margin-top: -80px;
+        -webkit-background-clip: content-box;
+        background-clip: content-box;
+        }
+
+        .more-exp {
+            padding-top: 80px;
+            margin-top: -80px;
+            -webkit-background-clip: content-box;
+            background-clip: content-box;
+            }
+
+            .title-column  {
+                padding-top: 30px;
+            }
 }
 
 
