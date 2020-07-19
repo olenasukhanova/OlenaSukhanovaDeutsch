@@ -1508,13 +1508,20 @@ div.like {
     font-weight: 400;
     width: 25%;
     height:80px;
-    border-left: 1px solid white;
-    border-bottom-right-radius: 30px;
+    /* border-left: 2px solid white; */
+    /* border-bottom-right-radius: 30px; */
     transition: .5s ease-out; 
     word-wrap: break-word;
     text-align: center;
 }
 
+.tablink:first-child {
+   border-left: 2px solid white; 
+}
+
+.tab-last{
+    border-right: 2px solid white; 
+ }
 /* .tablink:after {
     content: '\02795';
     font-size: 13px;
@@ -1528,11 +1535,7 @@ div.like {
     transition: .5s ease-out; 
   }
   
-  /* .defaultOpenPlus:after {
-    content: "\2796";
-  }
-  */
-
+ 
   .tabcontent {
     color: black;
     display: none;
@@ -1540,6 +1543,9 @@ div.like {
     /* float: right; */
     padding: 50px;
     text-align: center;
+    border-left:2px solid white;
+    border-right:2px solid white;
+    border-bottom:2px solid white;
   }
 
   .tabcontent h1{
