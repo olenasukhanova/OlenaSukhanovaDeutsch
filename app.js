@@ -3,15 +3,44 @@
 let mobileMenu = document.querySelector(".nav-mobile-menu");
 let mainMenu = document.querySelector(".navigation");
 
-mobileMenu.addEventListener("click", function(){
+mobileMenu.addEventListener("click", function () {
   mobileMenu.classList.toggle("active-menu");
-  if(mobileMenu.classList.contains('active-menu')){
-      mainMenu.classList.add('active-menu')
-  } else{
+  if (mobileMenu.classList.contains('active-menu')) {
+    mainMenu.classList.add('active-menu')
+  } else {
     mainMenu.classList.remove('active-menu')
   }
-}) 
+})
 
+// tabs
+// function openTranslate() {
+//   let tabs = document.querySelectorAll(".tablink");
+
+
+//   let i;
+
+//   for (i = 0; i < tabs.length; i++) {
+  
+//     tabs[i].addEventListener("click", function () {
+//       this.classList.toggle("defaultOpen");
+
+
+
+//       let butt = document.querySelectorAll('.tabcontent');
+  
+//       for (i = 0; i < butt.length; i++) {
+//         if (tabs[i].classList.contains('defaultOpen')) {
+//           butt[i].style.display = "block";
+
+//         } else {
+//           butt[i].style.display = "none";
+
+//         }
+//       }
+//     })
+//   }
+// }
+// openTranslate();
 
 
 // //  products-buttons
@@ -19,7 +48,7 @@ let acc = document.getElementsByClassName("accordion");
 let i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active-butt");
 
 
@@ -34,19 +63,20 @@ for (i = 0; i < acc.length; i++) {
 
 
 // modal window
+
 let modal = document.getElementById("myModal");
 let btn = document.getElementById("myBtn");
 let span = document.getElementsByClassName("close")[0];
 
-btn.onclick = function() {
+btn.onclick = function () {
   modal.style.display = "block";
 }
 
-span.onclick = function() {
+span.onclick = function () {
   modal.style.display = "none";
 }
 
-window.onclick = function(event) {
+window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
@@ -54,20 +84,20 @@ window.onclick = function(event) {
 
 
 // slider 
-$(function(){
-                
+$(function () {
+
   $('#slider1').Thumbelina({
-      $bwdBut:$('#slider1 .left'),    
-      $fwdBut:$('#slider1 .right'),
+    $bwdBut: $('#slider1 .left'),
+    $fwdBut: $('#slider1 .right'),
   });
-  
+
 })
 
 
 
 // squise-curtains
-$(function() {
-  $('[data-wanker]').wanker({delay: 200, duration: 2000});
+$(function () {
+  $('[data-wanker]').wanker({ delay: 200, duration: 2000 });
 });
 
 
@@ -75,23 +105,23 @@ $(function() {
 // UP-button
 $(document).ready(function () {
   $.goup({
-      trigger: 100,
-      bottomOffset: 150,
-      locationOffset: 40,
-      title: 'ВВЕРХ',
-      titleAsText: true,
-      zIndex:100,
-      containerRadius:50,
-      containerColor:"#c71806",
-      entryAnimation:"slide",
-      hideUnderWidth:100,
+    trigger: 100,
+    bottomOffset: 150,
+    locationOffset: 40,
+    title: 'ВВЕРХ',
+    titleAsText: true,
+    zIndex: 100,
+    containerRadius: 50,
+    containerColor: "#c71806",
+    entryAnimation: "slide",
+    hideUnderWidth: 100,
   });
 });
 
 
 
 // adjusting nav menu height
- 
+
 // let header = document.querySelector(".header").scrollHeight;
 // console.log(header);
 //  let sections = document.querySelectorAll("section")
@@ -105,6 +135,7 @@ $(document).ready(function () {
 
 
 
+
 // tabs
 
 function openTranslate(translateName, elmnt, color) {
@@ -113,7 +144,6 @@ function openTranslate(translateName, elmnt, color) {
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
-
 
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
@@ -125,5 +155,11 @@ function openTranslate(translateName, elmnt, color) {
 }
 
 document.getElementById("defaultOpen").click();
+
+
+
+
+
+
 
 
