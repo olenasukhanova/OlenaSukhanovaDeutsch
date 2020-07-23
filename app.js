@@ -12,7 +12,8 @@ mobileMenu.addEventListener("click", function () {
   }
 })
 
-// tabs
+
+
 // function openTranslate() {
 //   let tabs = document.querySelectorAll(".tablink");
 
@@ -44,19 +45,36 @@ mobileMenu.addEventListener("click", function () {
 
 
 // //  products-buttons
+// let acc = document.getElementsByClassName("accordion");
+// let i;
+
+// for (i = 0; i < acc.length; i++) {
+//   acc[i].addEventListener("click", function () {
+//     this.classList.toggle("active-butt");
+
+
+//     let panel = this.nextElementSibling;
+//     if (panel.style.display === "block") {
+//       panel.style.display = "none";
+//     } else {
+//       panel.style.display = "block";
+//     }
+//   });
+// }
+
+
 let acc = document.getElementsByClassName("accordion");
 let i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
+  acc[i].addEventListener("click", function() {
     this.classList.toggle("active-butt");
 
-
     let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
     } else {
-      panel.style.display = "block";
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
 }
@@ -110,7 +128,7 @@ $(document).ready(function () {
     locationOffset: 40,
     title: 'ВВЕРХ',
     titleAsText: true,
-    zIndex: 100,
+    zIndex: 20,
     containerRadius: 50,
     containerColor: "#c71806",
     entryAnimation: "slide",
@@ -134,27 +152,35 @@ $(document).ready(function () {
 // }, 1000);
 
 
+// modal window
+let modalWindow = document.querySelector(".modal-window");
+console.log(modalWindow);
+let closeBtn = document.querySelector(".button-close");
+console.log(closeBtn);
 
-
-// tabs
-
-function openTranslate(translateName, elmnt, color) {
-  let i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";  
-  }
-
-  document.getElementById(translateName).style.display = "block";
-  elmnt.style.backgroundColor = color;
+function openModal(){
+  modalWindow.classList.add("shown")
+  modalWindow.classList.remove("hide") 
 }
 
-document.getElementById("defaultOpen").click();
+function openModalScroll(){
+   if (window.pageYOffset >= document.documentElement.scrollHeight/2){
+      openModal();
+      window.removeEventListener('scroll',openModalScroll)
+   }
+}
+
+window.addEventListener('scroll', openModalScroll)
+
+
+function closeModal() {
+  modalWindow.classList.add("hide");
+  modalWindow.classList.remove("shown")
+}
+
+closeBtn.addEventListener("click",closeModal)
+
+
 
 
 

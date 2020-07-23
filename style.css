@@ -473,6 +473,92 @@ a.butt2-facebook:hover {
     transition: 1.1s ease-out;
 } */
 
+
+
+/***** modal-window ******/
+
+.modal-window {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.30);
+    z-index: 100;
+    display: none;
+}
+
+.modal-section {
+    width: 300px;
+    margin: 100px auto;
+    height: 200px;
+    border: 2px solid rgba(199, 2, 11, 1);
+    background-color: rgba(244, 244, 244);;
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 30;
+}
+
+.form-field, .modal-name {
+    margin: 10px 0;
+}
+
+.form-field p, .modal-name {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.modal-name {
+    font-size: 18px;
+    padding-top: 3px;
+    text-transform: uppercase;
+  
+}
+
+.form-field  {
+    padding: 5px;
+    color: black;
+    font-size: 14px;
+}
+
+.form-field-socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.form-field-socials a:hover {
+ border: 1px solid rgba(199, 2, 11, 1);
+ border-radius: 30px;
+ background-color: rgba(255, 255, 255, 0.5);
+}
+
+.button-close {
+    text-align: right;
+    float: right;
+    cursor: pointer;
+}
+
+.button-close:hover {
+    transform: rotateY(360deg);
+    -webkit-transition: 1.1s ease-out;
+    transition: 1.1s ease-out;
+}
+
+.hide {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+
+/***** modal-window ******/
+
 /* SLIDER */
 
 .slider-block {
@@ -1472,9 +1558,13 @@ div.like {
     font-size: 14px;
     cursor: pointer;
     background: rgba(236, 236, 236, 0.3);
-    display: none;
+    /* display: none; */
     overflow: hidden;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.9s ease-out; 
 }
+
 
 .products_hide p {
     padding-left: 10px;
@@ -1534,42 +1624,11 @@ div.like {
     border-left: 2px solid white;
 }
 
+
 .tab-last {
     border-right: 2px solid white;
 }
 
-/* .tablink:after {
-    content: '\1401';
-    font-size: 14px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-.defaultOpen,.tablink:hover {
-    background-color:rgba(236,236,236, 0.3);
-    transition: .5s ease-out; 
-  }
-  
-  .defaultOpen:after {
-    content: "X";
-    color:black;
-  }
- 
- 
-
-  .tabcontent {
-    color: black;
-    display: none;
-    padding: 50px;
-    text-align: center;
-    overflow: hidden;
-    float: right;
-    border-left: 2px solid white;
-    border-right: 2px solid white;
-    border-bottom: 2px solid white;
-
-  } */
 
 .tablink:hover {
     background-color: rgba(236, 236, 236, 0.3);
@@ -1579,14 +1638,26 @@ div.like {
 .tabcontent {
     color: black;
     display: none;
-    overflow: hidden;
     float: right;
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     border-left: 2px solid white;
     border-right: 2px solid white;
     border-bottom: 2px solid white;
+    -webkit-animation: fadeEffect 3s;
+    animation:fadeEffect 3s;
 }
+
+ /* Fade in tabs */
+ @-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 
 .tabcontent h1 {
     text-transform: uppercase;
@@ -1594,7 +1665,7 @@ div.like {
     font-weight: 700;
 }
 
-#translate_one, #translate_three {
+#translate_one , #translate_three {
     background-color: rgba(236, 236, 236, 0.3);
 }
 
